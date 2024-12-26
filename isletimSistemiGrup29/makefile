@@ -14,6 +14,8 @@ derle:
 	gcc -I ./include/ -o ./bin/main ./lib/prompt.o ./lib/command_parsing.o ./lib/background_processes.o./src/main.c
 	gcc -I ./include/ -o ./lib/command_parsing.o -c ./src/command_parsing.c
 	gcc -I ./include/ -o ./lib/background_processes.o -c ./src/background_processes.c
+	gcc -I ./include/ -o ./lib/pipeline_execution.o -c ./src/pipeline_execution.c
+
 	
 
 calistir:
