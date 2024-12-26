@@ -11,7 +11,8 @@ hepsi: derle calistir
 
 derle:
 	gcc -I ./include/ -o ./lib/prompt.o -c ./src/prompt.c
-	gcc -I ./include/ -o ./bin/main ./lib/prompt.o ./src/main.c
+	gcc -I ./include/ -o ./bin/main ./lib/prompt.o ./lib/command_parsing.o ./src/main.c
+	gcc -I ./include/ -o ./lib/command_parsing.o -c ./src/command_parsing.c
 	
 
 calistir:
